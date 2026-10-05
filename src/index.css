@@ -1,0 +1,29 @@
+/* src/index.css */
+:root {
+  --bg-color: #1e1e2e; --text-primary: #cdd6f4; --accent-color: #89b4fa;
+  --correct-color: #a6e3a1; --error-color: #f38ba8; --key-[span_92](start_span)[span_92](end_span)bg: #313244;
+}
+body {
+  margin: 0; font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg-color); color: var(--text-primary);
+  display: flex; justify-content: center; align-items: center; min-height: 100vh;
+}
+.app-container { width: 900px; max-width: 95%; display: flex; flex-direction: column; gap: 20px; text-align: center; }
+.ergonomics-section { display: flex; flex-direction: column; align-items: center; }
+.ergonomic-img { max-width: 300px; opacity: 0.8; border-radius: 8px; margin-bottom: 10px; }
+.instructions { color: #a6adc8; }
+.stats-panel { display: flex; justify-content: space-between; background: #181825; padding: 15px 30px; border-radius: 8px; font-weight: bold; }
+.stat-box span { color: var(--accent-color); margin-left: 10px; font-size: 1.5rem; }
+.reset-btn { background: var(--accent-color); color: var(--bg-color); border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+.typing-box { background: #181825; padding: 40px; border-radius: 8px; font-size: 2rem; font-family: monospace; letter-spacing: 2px; text-align: left; }
+.char.untyped { color: #585b70; }
+.char.correct { color: var(--correct-color); }
+.char.incorrect { color: var(--error-color); background: rgba(243, 139, 168, 0.2); }
+.char.current-cursor { border-bottom: 3px solid var(--accent-color); color: var(--text-primary); }
+.visual-keyboard { display: flex; flex-direction: column; gap: 10px; margin-top: 30px; background: #181825; padding: 20px; border-radius: 8px; }
+.keyboard-row { display: flex; justify-content: center; gap: 8px; }
+.key { width: 50px; height: 50px; background-color: var(--key-bg); border-radius: 6px; display: flex; justify-content: center; align-items: center; font-weight: bold; position: relative; }
+.key.home-row { border: 2px solid #45475a; }
+.key.spacebar { width: 400px; height: 50px; }
+.key.highlight { background-color: var(--accent-color); color: var(--bg-color); transform: translateY(-2px); box-shadow: 0 4px 0 #749aba; }
+.bump { width: 15px; height: 3px; background: rgba(255, 255, 255, 0.5); position: absolute; bottom: 8px; }
